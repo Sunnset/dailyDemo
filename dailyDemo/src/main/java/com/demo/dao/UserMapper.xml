@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.demo.dao.UserMapper">
+
+<!-- 添加用户 -->
+<insert id="addUser">
+	insert into users (account,password,nikename,create_time) values (#{account},#{password},#{nikename},#{create_time})
+</insert>
+
+<!-- 通过账户查询用户信息 -->
+<select id="getUserByAccount" resultType="java.util.Map">
+	select account,password,nikename from users where account=#{account}
+</select>
+
+<!-- 查询用户下的角色信息 -->
+<select id="getRolesByAccount" resultType="java.lang.String">
+	select r.role_name from users u LEFT JOIN user_role ur on u.id=ur.user_id LEFT JOIN role r on r.id=ur.role_id 
+	where u.account=#{account} 
+</select>
+
+</mapper>
