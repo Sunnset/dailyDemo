@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.factory.simpleFactory.BaseOperation</OriginalElement>
+  <nodes>
+    <node x="312.0" y="79.0">com.factory.simpleFactory.BaseOperation</node>
+    <node x="0.0" y="290.0">com.factory.simpleFactory.client.OperationMul</node>
+    <node x="520.0" y="112.0">com.factory.simpleFactory.OperationFactory</node>
+    <node x="208.0" y="290.0">com.factory.simpleFactory.client.OperationDiv</node>
+    <node x="624.0" y="290.0">com.factory.simpleFactory.client.OperationAdd</node>
+    <node x="416.0" y="290.0">com.factory.simpleFactory.client.OperationSub</node>
+    <node x="467.0" y="0.0">java.io.Serializable</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.factory.simpleFactory.BaseOperation" target="java.io.Serializable">
+      <point x="0.0" y="-80.5" />
+      <point x="406.0" y="54.0" />
+      <point x="502.5" y="54.0" />
+      <point x="-35.5" y="14.5" />
+    </edge>
+    <edge source="com.factory.simpleFactory.OperationFactory" target="java.io.Serializable">
+      <point x="0.0" y="-47.5" />
+      <point x="670.0" y="54.0" />
+      <point x="573.5" y="54.0" />
+      <point x="35.5" y="14.5" />
+    </edge>
+    <edge source="com.factory.simpleFactory.client.OperationAdd" target="com.factory.simpleFactory.BaseOperation">
+      <point x="0.0" y="-47.5" />
+      <point x="718.0" y="260.0" />
+      <point x="476.5" y="260.0" />
+      <point x="70.5" y="80.5" />
+    </edge>
+    <edge source="com.factory.simpleFactory.client.OperationMul" target="com.factory.simpleFactory.BaseOperation">
+      <point x="0.0" y="-47.5" />
+      <point x="94.0" y="260.0" />
+      <point x="335.5" y="260.0" />
+      <point x="-70.5" y="80.5" />
+    </edge>
+    <edge source="com.factory.simpleFactory.client.OperationDiv" target="com.factory.simpleFactory.BaseOperation">
+      <point x="0.0" y="-47.5" />
+      <point x="302.0" y="270.0" />
+      <point x="382.5" y="270.0" />
+      <point x="-23.5" y="80.5" />
+    </edge>
+    <edge source="com.factory.simpleFactory.client.OperationSub" target="com.factory.simpleFactory.BaseOperation">
+      <point x="0.0" y="-47.5" />
+      <point x="510.0" y="270.0" />
+      <point x="429.5" y="270.0" />
+      <point x="23.5" y="80.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="410.0" y="192.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
